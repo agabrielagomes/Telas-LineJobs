@@ -1,6 +1,8 @@
+
+
 * {
     margin: 0;
-    padding: 0;
+    padding: 100;
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
   }
@@ -10,6 +12,7 @@
     background: #fff;
   }
   
+  /*parte que altera a dimensão da página*/
   .container {
     display: flex;
     flex-direction: row;
@@ -17,9 +20,10 @@
     width: 100%;
   }
   
+  /*parte que altera o espaçamento entre as bordas da seção de informação*/
   .form-section, .info-section {
     flex: 1;
-    padding: 40px;
+    padding: 130px;
   }
   
   .form-section {
@@ -29,27 +33,31 @@
     justify-content: center;
   }
   
+  /*cor do titulo*/
   .form-section h1 {
     font-size: 2.2rem;
-    color: #7b1fa2;
+    color: #7234b4;
   }
   
   .form-section p {
     margin: 10px 0 30px;
-    color: #555;
+    color: #777;
   }
   
+  /*muda o espaçamento entre as bolinhas de concluir*/
   .steps {
     display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 50px; 
+    margin-bottom: 30px; /*espaço a baixo das boinhas*/
+    justify-content: center;
+
   }
   
   .step {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 2px solid #a8008f;
+    border: 2px solid #7234b4;
   }
   
   .step.active {
@@ -114,12 +122,14 @@
     opacity: 0.9;
   }
   
+  /*Parte que modifica o texto da página*/
   .info-section {
-    background: linear-gradient(to bottom right, #8e24aa, #512da8, #7c4dff);
+    background: linear-gradient(-180deg, #7234b4, #7234b4, #ff3c5f);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 60px;
     text-align: left;
   }

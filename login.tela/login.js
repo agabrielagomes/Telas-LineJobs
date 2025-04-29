@@ -38,5 +38,18 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Login realizado (simulação)');
             // loginForm.submit();
         }
+
+        // Verifica se o email está vazio ou tem formato inválido
+        if (emailInput.value.trim() === '') {
+            emailError.textContent = 'Por favor, insira seu email.';
+            emailError.style.display = 'block';
+            emailGroup.classList.add('error');
+            isValid = false;
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+            emailError.textContent = 'Formato de email inválido.';
+            emailError.style.display = 'block';
+            emailGroup.classList.add('error');
+            isValid = false;
+        }
     });
   });

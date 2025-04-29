@@ -2,7 +2,7 @@ body,
 html {
     margin: 0;
     /* Remove a margem padrão do body e html. */
-    padding: 10;
+    padding: 0;
     /* Remove o preenchimento padrão do body e html. */
     height: 100%;
     /* Garante que body e html ocupem 100% da altura da janela. */
@@ -12,6 +12,8 @@ html {
 }
 
 .container {
+    position: relative;
+    z-index: 1;
     display: flex;
     /* Usa o modelo de layout Flexbox. */
     height: 100vh;
@@ -264,6 +266,8 @@ input:valid~label {
 }
 
 .circle {
+    z-index: 0;
+    pointer-events: none;
     position: absolute;
     /* Define a posição como absoluta. */
     border-radius: 50%;
@@ -275,8 +279,8 @@ input:valid~label {
 }
 
 .circle1 {
-    background-color: #E040FB, 7234b4;
-    /* Define a cor de fundo. */
+    background: radial-gradient(circle, #C86DD7, #7234b4);
+    /* Define a cor de fundo com gradiente. */
     width: 150px;
     /* Define a largura. */
     height: 150px;
@@ -288,22 +292,22 @@ input:valid~label {
 }
 
 .circle2 {
-    background-color: #BA68C8;
+    background: radial-gradient(circle, #7234b4, #6E45E2);
     /* Define a cor de fundo. */
     width: 200px;
     /* Define a largura. */
     height: 200px;
     /* Define a altura. */
-    top: 70%;
+    top: 71%;
     /* Define a posição do topo. */
-    right: 10%;
+    right: 1%;
     /* Define a posição da direita. */
     animation-delay: 1s;
     /* Define o atraso da animação. */
 }
 
 .circle3 {
-    background-color: #9C27B0;
+    background: radial-gradient(circle, #6E45E2, #88D3CE);
     /* Define a cor de fundo. */
     width: 100px;
     /* Define a largura. */
@@ -315,8 +319,53 @@ input:valid~label {
     /* Define a posição da esquerda. */
     animation-delay: 2s;
     /* Define o atraso da animação. */
+    
 }
 
+.circle4 {
+    background: radial-gradient(circle, #791516, #88D3CE);
+    /* Define a cor de fundo. */
+    width: 100px;
+    /* Define a largura. */
+    height: 100px;
+    /* Define a altura. */
+    bottom: 70%;
+    /* Define a posição do fundo. */
+    left: 40%;
+    /* Define a posição da esquerda. */
+    animation-delay: 2s;
+    /* Define o atraso da animação. */
+}
+
+.circle5 {
+    background: radial-gradient(circle, #a8e245, #bfd388);
+    /* Define a cor de fundo. */
+    width: 100px;
+    /* Define a largura. */
+    height: 40px;
+    /* Define a altura. */
+    bottom: 600;
+    /* Define a posição do fundo. */
+    left: 40%;
+    /* Define a posição da esquerda. */
+    animation-delay: 2s;
+    /* Define o atraso da animação. */
+}
+
+.circle6 {
+    background: radial-gradient(circle, #45e24a, #88D3CE);
+    /* Define a cor de fundo. */
+    width: 100px;
+    /* Define a largura. */
+    height: 100px;
+    /* Define a altura. */
+    bottom: 90;
+    /* Define a posição do fundo. */
+    left: 40%;
+    /* Define a posição da esquerda. */
+    animation-delay: 2s;
+    /* Define o atraso da animação. */
+}
 @keyframes pulse {
     /* Define a animação 'pulse'. */
     0% {
@@ -344,6 +393,8 @@ input:valid~label {
 
     .left-side,
     .right-side {
+        z-index: 2;
+    position: relative; /* já tem no .left-side */
         width: 100%;
         /* Define a largura como 100%. */
         min-height: 50vh;
@@ -365,6 +416,7 @@ input:valid~label {
     }
 
     .login-box {
+        box-shadow: 0 4px 15px rgba(114, 52, 180, 0.4);
         width: 90%;
         /* Aumenta a largura da caixa de login. */
         max-width: 350px;
@@ -385,4 +437,9 @@ input:valid~label {
     position: absolute;   /* Posiciona o logo */
     top: 50px;           /* Distância do topo */
     left: 50px;          /* Distância da esquerda */
+}
+
+/*Destaca campos com erro usando identação em vermelho */
+.input-group.error input { 
+    border-color: red;
 }
