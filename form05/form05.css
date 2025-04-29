@@ -24,6 +24,7 @@
     justify-content: center;
   }
   
+  /*Titulo "criar conta"*/
   .form-section h1 {
     font-size: 2em;
     color: #6600cc;
@@ -38,7 +39,7 @@
   .step {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: 10px; /*espaçamento entre as bolinhas*/
     background: linear-gradient(45deg, #1fd1f9, #b621fe);
     border-radius: 50%;
     border: 2px solid white;
