@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LineJobs - Criar Conta</title>
+    <link rel="stylesheet" href="./form02.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-section">
+            <h1>Criar uma nova conta</h1>
+            <p class="subtext">Cadastre-se em apenas cinco etapas!</p>
+
+            <div class="steps">
+                <span class="step active"></span>
+                <span class="step active"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+
+            <form id="cadastroForm">
+                <fieldset>
+                    <legend>Informações de contato:</legend>
+
+                    <label for="email">E-MAIL*</label>
+                    <input type="email" id="email" placeholder="hello@reallygreatsite.com" required>
+
+                    <div class="input-group">
+                        <div>
+                            <label for="celular">CELULAR*</label>
+                            <input type="tel" id="celular" placeholder="(11) 12345678" required>
+                        </div>
+                        <div>
+                            <label for="telefone">TELEFONE</label>
+                            <input type="tel" id="telefone" placeholder="(11) 1234567">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div>
+                            <label for="cep">CEP*</label>
+                            <input type="text" id="cep" placeholder="12345-678" required>
+                        </div>
+                        <div>
+                            <label for="logradouro">LOGRADOURO</label>
+                            <input type="text" id="logradouro" placeholder="Preencher">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div>
+                            <label for="numero">N°*</label>
+                            <input type="text" id="numero" placeholder="Preencher" required>
+                        </div>
+                        <div>
+                            <label for="complemento">COMPLEMENTO</label>
+                            <input type="text" id="complemento" placeholder="*******">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div>
+                            <label for="bairro">BAIRRO*</label>
+                            <input type="text" id="bairro" placeholder="Preencha" required>
+                        </div>
+                        <div>
+                            <label for="cidade">CIDADE*</label>
+                            <input type="text" id="cidade" placeholder="Escolha" required>
+                        </div>
+                        <div>
+                            <label for="estado">ESTADO*</label>
+                            <input type="text" id="estado" placeholder="Escolha" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-avancar">Avançar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="info-section">
+            <h2>LineJobs</h2>
+            <h3>Otimize sua Busca</h3>
+            <p>Para personalizarmos sua busca por vagas e oferecermos oportunidades próximas a você, precisamos de suas informações de contato e endereço. Fique tranquilo(a), seus dados estão seguros e serão utilizados para otimizar sua experiência no LineJobs.</p>
+        </section>
+    </main>
+
+    <script src="./form02.js"></script>
+</body>
+</html>
