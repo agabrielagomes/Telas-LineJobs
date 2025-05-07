@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LineJobs - Dados Bancários</title>
-  <link rel="stylesheet" href="./form03.css" />
+  <link rel="stylesheet" href="../style/form03.css" />
 </head>
 <body>
   <main class="container">
@@ -24,7 +24,7 @@
         <fieldset>
           <legend>Dados Bancários:</legend>
 
-          <label for="banco">BANCO*</label>
+          <label for="banco">Banco*</label>
           <input type="text" id="banco" list="lista-bancos" placeholder="Preencher" required />
           <datalist id="lista-bancos">
             <option value="Banco do Brasil"></option>
@@ -42,22 +42,22 @@
 
           <div class="input-group">
             <div>
-              <label for="tipo-conta">TIPO DE CONTA*</label>
+              <label for="tipo-conta">Tipo de Conta*</label>
               <input type="text" id="tipo-conta" placeholder="Preencher" required />
             </div>
             <div>
-              <label for="agencia">AGÊNCIA*</label>
+              <label for="agencia">Agência*</label>
               <input type="text" id="agencia" placeholder="Preencher" required />
             </div>
           </div>
 
           <div class="input-group">
             <div>
-              <label for="conta">NÚMERO DA CONTA*</label>
+              <label for="conta">Número da Conta*</label>
               <input type="text" id="conta" placeholder="Preencher" required />
             </div>
             <div class="full">
-              <label for="chave-pix">CHAVE PIX*</label>
+              <label for="chave-pix">Chave Pix*</label>
               <input type="text" id="chave-pix" placeholder="CPF, E-mail, Chave aleatória" required />
             </div>
           </div>
@@ -74,6 +74,7 @@
     </section>
   </main>
 
-  <script src="./form03.js"></script>
+  <!-- Corrigido o caminho do script -->
+  <script src="../script/form03.js"></script>
 </body>
 </html>

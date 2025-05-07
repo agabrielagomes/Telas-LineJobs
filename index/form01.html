@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LineJobs - Cadastro</title>
-    <link rel="stylesheet" href="./form01.css" />
+    <link rel="stylesheet" href="../style/form01.css" />
   </head>
   <body>
     <div class="container">
       <div class="form-section">
-        <h1>Criar uma nova<br><strong>conta</strong></h1>
+        <h1>Criar uma nova<strong> conta</strong></h1>
         <p>Cadastre-se em apenas cinco etapas!</p>
 
         <div class="steps">
@@ -85,40 +85,7 @@
       </div>
     </div>
 
-    <script>
-      function somenteNumeros(event) {
-        let charCode = event.which ? event.which : event.keyCode;
-        if (charCode < 48 || charCode > 57) {
-          event.preventDefault();
-        }
-      }
-
-      document.getElementById('rg').addEventListener('keypress', somenteNumeros);
-      document.getElementById('cpf').addEventListener('keypress', somenteNumeros);
-
-      function mascaraCPF(cpf) {
-        cpf = cpf.replace(/\D/g, "");
-        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
-        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
-        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-        return cpf;
-      }
-
-      function mascaraRG(rg) {
-        rg = rg.replace(/\D/g, "");
-        rg = rg.replace(/(\d{2})(\d)/, "$1.$2");
-        rg = rg.replace(/(\d{3})(\d)/, "$1.$2");
-        rg = rg.replace(/(\d{3})(\d)/, "$1-$2");
-        return rg;
-      }
-
-      document.getElementById('cpf').addEventListener('input', function () {
-        this.value = mascaraCPF(this.value);
-      });
-
-      document.getElementById('rg').addEventListener('input', function () {
-        this.value = mascaraRG(this.value);
-      });
-    </script>
+    <!-- Importa o script externo -->
+    <script src="../script/form01.js"></script>
   </body>
 </html>

@@ -20,18 +20,28 @@
     width: 100%;
   }
   
-  /*parte que altera o espaçamento entre as bordas da seção de informação*/
-  .form-section, .info-section {
-    flex: 1;
-    padding: 190px;
-  }
-  
   .form-section {
+    flex: 2;
+    padding: 3rem;
+    max-width: none;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  
+  .info-section {
+    flex: 1;
+    padding: 3rem;
+    background: linear-gradient(-180deg, #7234b4, #7234b4, #ff3c5f);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+ 
   
   /*titulo*/
   .form-section h1 {
@@ -73,6 +83,8 @@
   form {
     width: 100%;
     max-width: 500px;
+    margin: 0 auto; /* Isso centraliza o form */
+
 }
 
   form h3 {
@@ -164,7 +176,7 @@ form legend {
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 0px;
     cursor: pointer;
     transition: opacity 0.3s ease;
 
@@ -181,7 +193,7 @@ form legend {
     width: calc(100% + 4px);
     filter: blur(0.5px);
     /* Remove a borda do botão. */
-    border-radius: 5px;
+    border-radius: 0px;
     /* Arredonda os cantos do botão. */
     padding: 15px 20px;
     /* Adiciona preenchimento interno ao botão. */
