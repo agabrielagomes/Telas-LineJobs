@@ -1,59 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+    <!DOCTYPE html>
+    <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-      <!-- Seu CSS -->
-    <link rel="stylesheet" href="login.css">
-    <title>LineJobs-Login</title>
-</head>
-<body>
-    <div class="container">
-        <div class="left-side">
-            <h1>Hello, Friend!</h1>
-            <p>Acesse sua conta e descubra as melhores vagas de home office dentro do LineJobs. Sua próxima oportunidade te espera!</p>
-                <div class="circle circle-left-top"></div>
-                <div class="circle circle-left-bottom"></div>
-                <img src="logo.png" alt="Logo LineJobs" class="logomarca"> <!-- Adicionar depois uma pasta com o logo do LineJobs e CONFERIR ESTA LINHA DE CÓDIGO -->
+        <!-- Seu CSS -->
+        <link rel="stylesheet" href="login.css">
+        <title>LineJobs-Login</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-side">
+                <img src="assets/logo.png" alt="Logo LineJobs" class="logo-container"> <!-- Adicionar depois uma pasta com o logo do LineJobs e CONFERIR ESTA LINHA DE CÓDIGO -->
+                <h1>Hello, Friend!</h1>
+                <p>Acesse sua conta e descubra as melhores vagas de home office dentro do LineJobs. Sua próxima oportunidade te espera!</p>
+                    <div class="circle circle-left-top"></div>
+                    <div class="circle circle-left-bottom"></div>
+            </div>
+            <div class="right-side">
+                <form action="#" method="post" class="login-box">   
+                    <h2>Login</h2>
+                    <p>Bem-vindo de volta! Faça login para continuar.</p>
+                    <div class="circle circle-right-top1"></div>
+                    <div class="circle circle-right-top2"></div>
+                    <div class="circle circle-right-top3"></div>
+                    <div class="circle circle-right-bottom"></div>
+
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="password" required placeholder=" ">
+                            <label for="password">Senha</label>
+                        </div>
+                        <div class="options">
+                            <label><input type="checkbox"> Lembrar-me!</label>
+                                <a href="#">Esqueci minha senha</a>
+                        </div>
+                        <button type="submit">Log in</button>
+                        
+                        <div class="signup-link">
+                            Novo usuário? <a href="#">Criar Conta</a>
+                        </div>
+                    </form>   
+            </div>
+            
+
         </div>
-        <div class="right-side">
-            <form action="#" method="post" class="login-box">   
-                <h2>Login</h2>
-                <p>Bem-vindo de volta! Faça login para continuar.</p>
-                <div class="circle circle-right-top1"></div>
-                <div class="circle circle-right-top2"></div>
-                <div class="circle circle-right-top3"></div>
-                <div class="circle circle-right-bottom"></div>
-                <form>
-                    <div class="input-group">
-                        <input type="email" id="email" required placeholder=" ">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="password" id="password" required placeholder=" ">
-                        <label for="password">Senha</label>
-                    </div>
-                    <div class="options">
-                        <label><input type="checkbox"> Lembrar-me!</label>
-                            <a href="#">Esqueci minha senha</a>
-                    </div>
-                    <button type="submit">Log in</button>
-                    
-                    <div class="signup-link">
-                        Novo usuário? <a href="#">Criar Conta</a>
-                    </div>
-                </form>   
-        </div>
-        
-
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+        <script src="script.js"></script>
+    </body>
+    </html>
