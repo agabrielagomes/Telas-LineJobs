@@ -1,0 +1,305 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-side {
+    background: linear-gradient(-180deg, #7234b4, #7234b4, #ff3c5f);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.left-side h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.left-side p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.right-side {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.login-box {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(189, 19, 19, 0.1);
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #7234b4;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.login-box p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    color: #000000;
+    padding: 0 5px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 1em;
+    pointer-events: none;
+    transition: .3s;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    color: #7234b4;
+    background: transparent;
+    padding: 0 1rem;
+    height: 50px;
+    width: 300px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    background-image: linear-gradient(white, white),
+                      linear-gradient(45deg, #7234b4, #ff3c5f);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+input:focus~label,
+input:valid~label {
+    top: 0;
+    background-color: #ffffff;
+    font-size: 0.7rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #7234b4;
+}
+
+.options a {
+    color: #7234b4;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login-box button {
+    content: "";
+    background: linear-gradient(45deg, #7234b4,#7234b4 , #ff3c5f);
+    color: white;
+    background-size: 600%;
+    z-index: -1;
+    width: 105%;
+    height: calc(100% + 4px);
+    filter: blur(0.5px);
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+
+.login-box button:hover::before {
+    opacity: 1;
+}
+
+.login-box button:active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.signup-link {
+    margin-top: 20px;
+    color: #7234b4;
+}
+
+.signup-link a {
+    color: #7234b4;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.circle {
+    z-index: 0;
+    pointer-events: none;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: pulse 5s infinite alternate;
+}
+
+.circle1 {
+    background: radial-gradient(circle, #C86DD7, #7234b4);
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 15%;
+}
+
+.circle2 {
+    background: radial-gradient(circle, #7234b4, #6E45E2);
+    width: 200px;
+    height: 200px;
+    top: 71%;
+    right: 1%;
+    animation-delay: 1s;
+}
+
+.circle3 {
+    background: radial-gradient(circle, #6E45E2, #88D3CE);
+    width: 100px;
+    height: 100px;
+    bottom: 5%;
+    left: 40%;
+    animation-delay: 2s;
+}
+
+.circle4 {
+    background: radial-gradient(circle, #791516, #88D3CE);
+    width: 100px;
+    height: 100px;
+    bottom: 70%;
+    left: 40%;
+    animation-delay: 2s;
+}
+
+.circle5 {
+    background: radial-gradient(circle, #a8e245, #bfd388);
+    width: 100px;
+    height: 40px;
+    bottom: 600px;
+    left: 40%;
+    animation-delay: 2s;
+}
+
+.circle6 {
+    background: radial-gradient(circle, #45e24a, #88D3CE);
+    width: 100px;
+    height: 100px;
+    bottom: 90px;
+    left: 40%;
+    animation-delay: 2s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .left-side {
+        padding: 30px;
+    }
+
+    .right-side {
+        padding: 30px 0;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .login-box {
+        box-shadow: 0 4px 15px rgba(114, 52, 180, 0.4);
+        width: 90%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    .circle {
+        display: none;
+    }
+}
+
+.logomarca {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.input-group.error input {
+    border-color: red;
+}
