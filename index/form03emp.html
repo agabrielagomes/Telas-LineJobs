@@ -24,8 +24,10 @@
         <fieldset>
           <legend>Dados Bancários:</legend>
 
-          <label for="banco">Banco*</label>
-          <input type="text" id="banco" list="lista-bancos" placeholder="Preencher" required />
+          <div class="floating-label">
+            <input type="text" id="banco" list="lista-bancos" placeholder=" " required />
+            <label for="banco">Banco*</label>
+          </div>
           <datalist id="lista-bancos">
             <option value="Banco do Brasil"></option>
             <option value="Bradesco"></option>
@@ -41,24 +43,24 @@
           </datalist>
 
           <div class="input-group">
-            <div>
+            <div class="floating-label">
+              <input type="text" id="tipo-conta" placeholder=" " required />
               <label for="tipo-conta">Tipo de Conta*</label>
-              <input type="text" id="tipo-conta" placeholder="Preencher" required />
             </div>
-            <div>
+            <div class="floating-label">
+              <input type="text" id="agencia" placeholder=" " required />
               <label for="agencia">Agência*</label>
-              <input type="text" id="agencia" placeholder="Preencher" required />
             </div>
           </div>
 
           <div class="input-group">
-            <div>
+            <div class="floating-label">
+              <input type="text" id="conta" placeholder=" " required />
               <label for="conta">Número da Conta*</label>
-              <input type="text" id="conta" placeholder="Preencher" required />
             </div>
-            <div class="full">
+            <div class="floating-label full">
+              <input type="text" id="chave-pix" placeholder=" " required />
               <label for="chave-pix">Chave Pix*</label>
-              <input type="text" id="chave-pix" placeholder="CPF, E-mail, Chave aleatória" required />
             </div>
           </div>
 

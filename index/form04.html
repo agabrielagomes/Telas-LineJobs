@@ -25,31 +25,32 @@
           <legend>Nos conte sobre você:</legend>
 
           <div class="input-group">
-            <div>
+            <div class="floating-label">
+              <input type="text" id="area-atuacao" placeholder=" " required />
               <label for="area-atuacao">Área de Atuação*</label>
-              <input type="text" id="area-atuacao" placeholder="Preencher" required />
             </div>
-            <div>
-              <label for="experiencia">Experiencia Profissional*</label>
-              <input type="text" id="experiencia" placeholder="Preencher" required />
+            <div class="floating-label">
+              <input type="text" id="experiencia" placeholder=" " required />
+              <label for="experiencia">Experiência Profissional*</label>
             </div>
           </div>
 
           <div class="input-group">
-            <div>
+            <div class="floating-label">
+              <input type="text" id="formacao" placeholder=" " required />
               <label for="formacao">Formação Acadêmica*</label>
-              <input type="text" id="formacao" placeholder="Preencher" required />
             </div>
-            <div>
+            <div class="floating-label">
+              <input type="text" id="disponibilidade" placeholder=" " required />
               <label for="disponibilidade">Disponibilidade*</label>
-              <input type="text" id="disponibilidade" placeholder="Preencher" required />
             </div>
           </div>
 
-          <label for="habilidades">Habilidades*</label>
-          <textarea id="habilidades" placeholder="Descreva" required></textarea>
+          <div class="floating-label">
+            <textarea id="habilidades" placeholder=" " required></textarea>
+            <label for="habilidades">Habilidades*</label>
+          </div>
 
-          <!-- Alterado o texto do botão para 'Avançar' -->
           <button type="submit" class="btn-avancar">Avançar</button>
         </fieldset>
       </form>

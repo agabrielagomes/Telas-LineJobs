@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    background: #fff;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .info-section {
+    flex: 1;
+    padding: 3rem;
+    background: linear-gradient(180deg, #7234b4, #ff3c5f);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .info-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .info-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 400px;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 3rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .form-section h1 {
+    font-size: 2.2rem;
+    color: #7234b4;
+    margin-bottom: 10px;
+  }
+  
+  .form-section p {
+    margin-bottom: 30px;
+    color: #000;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    width: 100%; /* Novo */
+    max-width: 300px; /* Limita a largura máxima */
+    font-weight: bold;
+    font-size: 1rem; /* Reduz um pouco o tamanho da fonte */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #7234b4, #ff3c5f);
+    background-size: 600%;
+    animation: glowing 20s linear infinite;
+    transition: background 0.3s ease;
+    white-space: nowrap; /* Impede quebra de linha */
+    margin-bottom: 15px; /* Adiciona espaçamento entre os botões */
+  }
+  
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .btn i {
+    font-size: 1.2rem;
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .info-section, .form-section {
+      width: 100%;
+      padding: 2rem;
+    }
+  
+    .form-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .info-section h1 {
+      font-size: 2rem;
+    }
+  }
+  

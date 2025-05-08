@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LineJobs - Criar Conta</title>
   <link rel="stylesheet" href="../style/form02.css" />
 </head>
@@ -24,54 +24,56 @@
         <fieldset>
           <legend>Informações de Contato:</legend>
 
-          <label for="email">E-mail*</label>
-          <input type="email" id="email" placeholder="hello@reallygreatsite.com" required>
+          <div class="floating-label">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">E-mail*</label>
+          </div>
 
           <div class="input-group">
-            <div>
+            <div class="floating-label">
+              <input type="tel" id="celular" name="celular" placeholder=" " required>
               <label for="celular">Celular*</label>
-              <input type="tel" id="celular" placeholder="(11) 12345678" required>
             </div>
-            <div>
+            <div class="floating-label">
+              <input type="tel" id="telefone" name="telefone" placeholder=" ">
               <label for="telefone">Telefone</label>
-              <input type="tel" id="telefone" placeholder="(11) 1234567">
             </div>
           </div>
 
           <div class="input-group">
-            <div>
+            <div class="floating-label">
+              <input type="text" id="cep" name="cep" placeholder=" " required>
               <label for="cep">CEP*</label>
-              <input type="text" id="cep" placeholder="12345-678" required>
             </div>
-            <div>
+            <div class="floating-label">
+              <input type="text" id="logradouro" name="logradouro" placeholder=" ">
               <label for="logradouro">Logradouro</label>
-              <input type="text" id="logradouro" placeholder="Preencher">
             </div>
           </div>
 
           <div class="input-group">
-            <div>
+            <div class="floating-label">
+              <input type="text" id="numero" name="numero" placeholder=" " required>
               <label for="numero">N°*</label>
-              <input type="text" id="numero" placeholder="Preencher" required>
             </div>
-            <div>
+            <div class="floating-label">
+              <input type="text" id="complemento" name="complemento" placeholder=" ">
               <label for="complemento">Complemento</label>
-              <input type="text" id="complemento" placeholder="*******">
             </div>
           </div>
 
           <div class="input-group">
-            <div>
+            <div class="floating-label">
+              <input type="text" id="bairro" name="bairro" placeholder=" " required>
               <label for="bairro">Bairro*</label>
-              <input type="text" id="bairro" placeholder="Preencha" required>
             </div>
-            <div>
+            <div class="floating-label">
+              <input type="text" id="cidade" name="cidade" placeholder=" " required>
               <label for="cidade">Cidade*</label>
-              <input type="text" id="cidade" placeholder="Escolha" required>
             </div>
-            <div>
+            <div class="floating-label">
+              <input type="text" id="estado" name="estado" placeholder=" " required>
               <label for="estado">Estado*</label>
-              <input type="text" id="estado" placeholder="Escolha" required>
             </div>
           </div>
 

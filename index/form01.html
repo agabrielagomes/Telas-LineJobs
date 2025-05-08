@@ -20,59 +20,63 @@
           <span class="step"></span>
         </div>
 
-        <form id="cadastroForm">
-          <fieldset>
-            <legend>Informações Pessoais:</legend>
+        <!-- ...código anterior mantido... -->
+<form id="cadastroForm">
+  <fieldset>
+    <legend>Informações Pessoais:</legend>
 
-            <label>Nome*</label>
-            <input type="text" placeholder="Nome completo" required />
+    <div class="floating-label">
+      <input type="text" id="nome" placeholder=" " required />
+      <label for="nome">Nome*</label>
+    </div>
 
-            <div class="input-group">
-              <div>
-                <label for="cpf">CPF*</label>
-                <input type="text" id="cpf" name="cpf" maxlength="14" required />
-              </div>
-              <div>
-                <label for="rg">RG*</label>
-                <input type="text" id="rg" name="rg"  required />
-              </div>
-            </div>
+    <div class="input-group">
+      <div class="floating-label">
+        <input type="text" id="cpf" name="cpf" maxlength="14" placeholder=" " required />
+        <label for="cpf">CPF*</label>
+      </div>
+      <div class="floating-label">
+        <input type="text" id="rg" name="rg" placeholder=" " required />
+        <label for="rg">RG*</label>
+      </div>
+    </div>
 
-            <div class="input-group">
-              <div>
-                <label for="genero">Gênero*</label>
-                <select id="genero" name="genero" required>
-                  <option value="" disabled selected>Selecione</option>
-                  <option value="masculino">Masculino</option>
-                  <option value="feminino">Feminino</option>
-                  <option value="outro">Outro</option>
-                  <option value="prefiro_nao_dizer">Prefiro não dizer</option>
-                </select>
-              </div>
-            </div>
+    <div class="input-group">
+      <div class="floating-label">
+        <select id="genero" name="genero" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+          <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+        </select>
+        <label for="genero">Gênero*</label>
+      </div>
+    </div>
 
-            <div class="input-group">
-              <div>
-                <label for="estado_civil">Estado Cívil*</label>
-                <select id="estado_civil" name="estado_civil" required>
-                  <option value="" disabled selected>Selecione</option>
-                  <option value="solteiro">Solteiro(a)</option>
-                  <option value="casado">Casado(a)</option>
-                  <option value="divorciado">Divorciado(a)</option>
-                  <option value="viuvo">Viúvo(a)</option>
-                  <option value="separado">Separado(a)</option>
-                  <option value="uniao_estavel">União Estável</option>
-                </select>
-              </div>
-              <div>
-                <label>Nacionalidade*</label>
-                <input type="text" placeholder="Preencha" required />
-              </div>
-            </div>
+    <div class="input-group">
+      <div class="floating-label">
+        <select id="estado_civil" name="estado_civil" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="solteiro">Solteiro(a)</option>
+          <option value="casado">Casado(a)</option>
+          <option value="divorciado">Divorciado(a)</option>
+          <option value="viuvo">Viúvo(a)</option>
+          <option value="separado">Separado(a)</option>
+          <option value="uniao_estavel">União Estável</option>
+        </select>
+        <label for="estado_civil">Estado Civil*</label>
+      </div>
+      <div class="floating-label">
+        <input type="text" id="nacionalidade" placeholder=" " required />
+        <label for="nacionalidade">Nacionalidade*</label>
+      </div>
+    </div>
 
-            <button type="submit">Avançar</button>
-          </fieldset>
-        </form>
+    <button type="submit">Avançar</button>
+  </fieldset>
+</form>
+
       </div>
 
       <div class="info-section">

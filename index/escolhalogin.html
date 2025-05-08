@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LineJobs - Login</title>
+  <link rel="stylesheet" href="../style/escolhalogin.css" />
+  
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <div class="info-section">
+      <img src="logo.png" alt="LineJobs Logo" style="width: 120px; margin-bottom: 20px;">
+      <h1>Acesse seu perfil</h1>
+      <p>
+        Acesse sua conta e descubra as melhores vagas de home office dentro do LineJobs. Sua próxima oportunidade te espera!
+      </p>
+    </div>
+    <div class="form-section">
+      <h1>Login</h1>
+      <p>Selecione seu perfil de acesso</p>
+      <button class="btn" onclick="login('cooperado')">
+        <i class="fas fa-user"></i>
+        Entrar como Cooperado
+      </button>
+      <button class="btn" onclick="login('empresa')">
+        <i class="fas fa-building"></i>
+        Entrar como Empresa
+      </button>
+    </div>
+  </div>
+  <script src="../script/escolhalogin.js"></script>
+</body>
+</html>

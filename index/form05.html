@@ -17,18 +17,22 @@
         <span class="step active"></span>
         <span class="step active"></span>
         <span class="step active"></span>
-        <div class="step active"></div> <!-- ativa a quinta -->
+        <div class="step active"></div>
       </div>
 
       <form id="signupForm">
         <fieldset>
           <legend>Defina sua senha de acesso:</legend>
 
-          <label for="senha">Senha*</label>
-          <input type="password" id="senha" placeholder="Senha (mínimo oito caracteres)" required minlength="8" />
+          <div class="floating-label">
+            <input type="password" id="senha" name="senha" placeholder=" " required minlength="8" />
+            <label for="senha">Senha*</label>
+          </div>
 
-          <label for="confirmaSenha">Confirme sua senha</label>
-          <input type="password" id="confirmaSenha" placeholder="Confirme sua senha" required minlength="8" />
+          <div class="floating-label">
+            <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder=" " required minlength="8" />
+            <label for="confirmaSenha">Confirme sua senha</label>
+          </div>
 
           <div class="checkbox-container">
             <input type="checkbox" id="termos" />
@@ -41,7 +45,6 @@
           </div>
 
           <button class="btn-avancar" id="btnAvancar" type="submit" disabled>Finalizar Cadastro</button>
-
         </fieldset>
       </form>
     </section>

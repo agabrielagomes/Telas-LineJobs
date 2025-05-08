@@ -38,5 +38,5 @@ function limparCamposEndereco() {
 document.getElementById('cadastroForm').addEventListener('submit', function (event) {
   event.preventDefault();
   // Aqui você pode adicionar validação extra antes de redirecionar, se quiser
-  window.location.href = "form03emp.html"; // Página dentro da pasta /index
+  window.location.href = "form03emp.html"; // Caminho correto dentro da pasta /index
 });

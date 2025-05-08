@@ -1,3 +1,4 @@
+/* RESET GERAL */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body, html {
   background: #fff;
 }
 
+/* CONTAINER PRINCIPAL */
 .container {
   display: flex;
   flex-direction: row;
@@ -17,6 +19,7 @@ body, html {
   width: 100%;
 }
 
+/* SEÇÃO DO FORMULÁRIO */
 .form-section {
   flex: 2;
   padding: 3rem;
@@ -26,6 +29,7 @@ body, html {
   justify-content: center;
 }
 
+/* SEÇÃO DE INFORMAÇÕES (LATERAL) */
 .info-section {
   flex: 1;
   padding: 3rem;
@@ -38,6 +42,7 @@ body, html {
   text-align: left;
 }
 
+/* TÍTULOS E TEXTOS DO FORMULÁRIO */
 .form-section h1 {
   font-size: 2.2rem;
   color: #7234b4;
@@ -50,6 +55,7 @@ body, html {
   text-align: center;
 }
 
+/* BOLINHAS DE ETAPAS */
 .steps {
   display: flex;
   gap: 50px;
@@ -70,6 +76,7 @@ body, html {
   box-shadow: 0 0 0 1px #7234b4;
 }
 
+/* FORMULÁRIO */
 form {
   width: 100%;
   max-width: 500px;
@@ -83,6 +90,7 @@ form label {
   color: #000;
 }
 
+/* INPUTS E SELECT COM BORDA DEGRADÊ */
 form input,
 form select {
   width: 100%;
@@ -98,6 +106,7 @@ form select {
   background-clip: padding-box, border-box;
 }
 
+/* FIELDSET COM ESTILO E SOMBRA */
 form fieldset {
   border: 0.05px solid #7234b4;
   border-radius: 12px;
@@ -108,6 +117,7 @@ form fieldset {
   transition: box-shadow 0.3s ease;
 }
 
+/* LEGEND DESTACADO */
 form legend {
   font-size: 1rem;
   font-weight: bold;
@@ -118,6 +128,7 @@ form legend {
   border-left: 4px solid #ff3c5f;
 }
 
+/* AGRUPAMENTO DE INPUTS LADO A LADO */
 .input-group {
   display: flex;
   flex-direction: row;
@@ -128,6 +139,7 @@ form legend {
   flex: 1;
 }
 
+/* BOTÃO COM ANIMAÇÃO DE DEGRADÊ */
 button {
   width: 100%;
   padding: 15px 20px;
@@ -144,6 +156,7 @@ button {
   filter: blur(0.5px);
 }
 
+/* ANIMAÇÃO DE BRILHO */
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
@@ -154,6 +167,7 @@ button:hover {
   opacity: 0.9;
 }
 
+/* ESTILOS DA INFO-SECTION */
 .info-section h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -171,12 +185,14 @@ button:hover {
   max-width: 400px;
 }
 
+/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
   }
 
-  .form-section, .info-section {
+  .form-section,
+  .info-section {
     width: 100%;
     padding: 30px;
   }
@@ -218,4 +234,68 @@ button:hover {
     width: 20px;
     height: 20px;
   }
+}
+
+/* Label flutuante: estrutura base */
+.floating-label {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floating-label input,
+.floating-label select {
+  width: 100%;
+  padding: 12px 10px 12px 10px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  background-image: linear-gradient(white, white), linear-gradient(45deg, #7234b4, #ff3c5f);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Label posicionado sobre o input */
+.floating-label label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #888;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  background-color: white;
+  padding: 0 4px;
+}
+
+/* Quando input ou select estiver preenchido ou em foco */
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label select:focus + label,
+.floating-label select:valid + label {
+  top: -10px;
+  left: 8px;
+  font-size: 0.75rem;
+  color: #7234b4;
+  background: white;
+}
+
+/* Remove cor de fundo cinza do select padrão em alguns browsers */
+.floating-label select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Adiciona um ícone de seta para select (opcional) */
+.floating-label select {
+  background-image:
+    linear-gradient(white, white),
+    linear-gradient(45deg, #7234b4, #ff3c5f),
+    url("data:image/svg+xml;utf8,<svg fill='%23000' height='10' viewBox='0 0 24 24' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center center, center center, right 10px center;
+  background-size: 100% 100%, 100% 100%, 12px;
+  padding-right: 30px;
 }
