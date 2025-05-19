@@ -7,6 +7,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const emailGroup = document.getElementById('emailGroup');
     const passwordGroup = document.getElementById('passwordGroup');
 
+    const switchToggle = document.getElementById('switch');
+
+    // Redireciona para login de cooperado ao desativar o botão
+    const switchLabel = document.querySelector('label[for="switch"]');
+
+    switchLabel.addEventListener('click', function () {
+        setTimeout(() => {
+            if (!switchToggle.checked) {
+                window.location.href = 'login.html';
+            }
+        }, 100);
+    });
+    
+
     loginForm.addEventListener('submit', function (event) {
         let isValid = true;
 
@@ -15,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
         passwordError.style.display = 'none';
         passwordGroup.classList.remove('error');
 
-        // Email vazio ou inválido
         if (emailInput.value.trim() === '') {
             emailError.textContent = 'Por favor, insira seu email.';
             emailError.style.display = 'block';
@@ -28,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
             isValid = false;
         }
 
-        // Senha vazia
         if (passwordInput.value.trim() === '') {
             passwordError.textContent = 'Por favor, insira sua senha.';
             passwordError.style.display = 'block';
