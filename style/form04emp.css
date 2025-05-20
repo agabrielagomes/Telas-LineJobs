@@ -297,3 +297,50 @@ button:hover, .btn-avancar:hover {
   background-position: center center, center center, right 10px center;
   background-size: 100% 100%, 100% 100%, 12px;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+  flex: 1;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  background: #ddd;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background: #ccc;
+}
+
+/* Botão Avançar (mantendo estilo anterior) */
+.btn-avancar {
+  flex: 1;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(45deg, #7319c6, #9b2dff, #f5316e);
+  background-size: 600%;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  filter: blur(0.5px);
+  animation: glowing 20s linear infinite;
+  transition: 0.3s ease;
+  z-index: -1;
+}
+
+.btn-avancar:hover {
+  opacity: 0.9;
+}

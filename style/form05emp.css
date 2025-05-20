@@ -161,6 +161,20 @@ button,
   animation: glowing 20s linear infinite;
 }
 
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.button-group .btn {
+  width: 50%;
+  max-width: 200px;
+  filter: blur(0.5px);
+  z-index: 1;
+}
+
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }

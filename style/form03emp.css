@@ -155,6 +155,32 @@ button, .btn-avancar {
   transition: 0.3s ease;
   animation: glowing 20s linear infinite;
 }
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-voltar {
+  margin-top: 1.5rem;
+  padding: 15px 20px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #7234b4, #7234b4, #ff3c5f);
+  background-size: 600%;
+  filter: blur(0.5px);
+  z-index: -1;
+  transition: 0.3s ease;
+  animation: glowing 20s linear infinite;
+}
+
+.btn-voltar:hover {
+  opacity: 0.9;
+}
 
 @keyframes glowing {
   0% { background-position: 0 0; }

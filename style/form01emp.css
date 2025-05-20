@@ -167,6 +167,35 @@ button:hover {
   opacity: 0.9;
 }
 
+/* GRUPO DE BOTÕES (Voltar e Avançar lado a lado) */
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #7234b4, #ff3c5f);
+  background-size: 600%;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  animation: glowing 20s linear infinite;
+  filter: blur(0.5px);
+}
+
+.button-group button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
 /* ESTILOS DA INFO-SECTION */
 .info-section h1 {
   font-size: 2.5rem;
@@ -208,6 +237,10 @@ button:hover {
   }
 
   .input-group {
+    flex-direction: column;
+  }
+
+  .button-group {
     flex-direction: column;
   }
 }
